@@ -8,9 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
 dist-ssr
 *.local
+
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+3-column-preview-card-component-main/style-guide.md
+3-column-preview-card-component-main/design/active-states.jpg
+3-column-preview-card-component-main/design/desktop-design.jpg
+3-column-preview-card-component-main/.gitignore
+3-column-preview-card-component-main/index.html
+3-column-preview-card-component-main/README-template.md
+3-column-preview-card-component-main/README.md
+3-column-preview-card-component-main/design/desktop-preview.jpg
+3-column-preview-card-component-main/design/mobile-design.jpg
+src/desktop-design.jpg
+src/mobile-design.jpg
+3-column-preview-card-component-main/images/favicon-32x32.png
+3-column-preview-card-component-main/images/icon-luxury.svg
+3-column-preview-card-component-main/images/icon-sedans.svg
+3-column-preview-card-component-main/images/icon-suvs.svg
