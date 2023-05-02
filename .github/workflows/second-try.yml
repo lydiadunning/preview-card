@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: lydiadunning.github.io/preview-card/
+      url: /preview-card/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
