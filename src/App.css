@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
 
-
   font-size: 15px;
   font-family: 'Lexend Deca', sans-serif;
   
@@ -30,6 +29,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 1;
+}
+
+h1 {
+  display: none;
 }
 
 .vehicle {
@@ -69,6 +73,7 @@
   padding: .9rem 2rem;
   font-size: .9rem;
   letter-spacing: .3px;
+  cursor: pointer;
 }
 
 .sedans {
@@ -101,21 +106,21 @@
   border: 1px solid var(--white);
 }
 
-.vehicle:first-child {
+.vehicle.sedans {
   border-radius:  var(--corner-curve) var(--corner-curve) 0 0;
 }
-.vehicle:last-child {
+.vehicle.luxury {
   border-radius: 0 0 var(--corner-curve) var(--corner-curve);
 }
 
 @media(min-width: 611px) {
-  .vehicle {
-    border-radius: 0 var(--corner-curve) var(--corner-curve) 0;
-  }
-  .vehicle:first-child {
+  .vehicle.sedans {
     border-radius: var(--corner-curve) 0 0 var(--corner-curve);
   }
-  .vehicle:last-child {
+  .vehicle.suvs {
+    border-radius: 0 var(--corner-curve) var(--corner-curve) 0;
+  }
+  .vehicle.luxury {
     border-radius:  0 0 var(--corner-curve) var(--corner-curve);
   }
 } 
@@ -131,13 +136,14 @@
     justify-content: flex-start;
   }
 
-  .vehicle {
-    border-radius: 0 0 0 0;
-  }
-  .vehicle:first-child {
+
+  .vehicle.sedans {
     border-radius: var(--corner-curve) 0 0 var(--corner-curve);
   }
-  .vehicle:last-child {
+  .vehicle.suvs {
+    border-radius: 0 0 0 0;
+  }
+  .vehicle.luxury {
     border-radius: 0 var(--corner-curve) var(--corner-curve) 0;
   }
 

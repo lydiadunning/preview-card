@@ -1,13 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import VehicleType from './components/vehicleType'
-// import {ReactComponent as SedanSVG} from './assets/images/icon-sedans.svg'
-// import {ReactComponent as SuvSVG} from './assets/images/icon-suvs.svg'
-// import {ReactComponent as LuxurySVG} from './assets/images/icon-luxury.svg'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   const content = [
     {
       svgLink: './src/assets/images/icon-sedans.svg',
@@ -29,10 +24,9 @@ function App() {
     },
   ]
 
-
-  // console.log("sedanSGV: ", sedanSVG)
   return (
     <div className="app">
+      <h1>Vehicles</h1>
       <VehicleType 
         svgLink = { content[0].svgLink }
         type = { content[0].type }

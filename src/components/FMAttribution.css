@@ -1,0 +1,16 @@
+/* 
+requires the parent element to include:
+text-align: center; 
+*/
+
+.attribution { 
+  position: fixed;
+  font-size: 11px; 
+  bottom: 0rem;
+  left: calc(50% - 9.5rem);
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
