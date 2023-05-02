@@ -5,7 +5,6 @@ const VehicleType = ({
                       }) => {
 
   const correctSVGLink = "." + svgLink
-  console.log(correctSVGLink)                     
   return (
     <section className = {`vehicle ${type.toLowerCase()}`} >
       <img src= { correctSVGLink }/>
