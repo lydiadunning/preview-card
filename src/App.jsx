@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import VehicleType from './components/vehicleType'
+import VehicleType from './components/VehicleType.jsx'
 
 function App() {
   const content = [
